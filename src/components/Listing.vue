@@ -6,9 +6,10 @@ const props = defineProps<ListingInterface>()
 
 <template>
     <li>
+        <img :src="props.logo" alt="">
+
         <div>{{ props.id }}</div>
         <div>{{ props.company }}</div>
-        <div>{{ props.logo }}</div>
         <div>{{ props.role }}</div>
         <div>{{ props.level }}</div>
         <div>{{ props.postedAt }}</div>
