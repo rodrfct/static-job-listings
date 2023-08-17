@@ -24,3 +24,10 @@ export interface ListingInterface {
         <Listing v-for="listing in listingData" v-bind="listing" />
     </ul>
 </template>
+
+<style scoped>
+ul {
+    margin-top: 50px;
+    padding: 0 5%;
+}
+</style>

@@ -11,4 +11,8 @@
 body {
   font-family: 'League Spartan', sans-serif;
   font-size: 15px;
+
+  background-color: var(--Light-Grayish-Cyan-Background);
+  padding: 0;
+  margin: 0;
 }
