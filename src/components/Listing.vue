@@ -2,6 +2,12 @@
 import type { ListingInterface } from './ListingsSection.vue';
 
 const props = defineProps<ListingInterface>()
+
+const emit = defineEmits(['toggle-filter'])
+
+function toggleFilter(filter: string): void {
+    emit('toggle-filter', filter)
+}
 </script>
 
 <template>
@@ -22,11 +28,13 @@ const props = defineProps<ListingInterface>()
         </div>
 
         <div class="filters">
-            <span>{{ props.role }}</span>
-            <span>{{ props.level }}</span>
+            <span @click="toggleFilter(props.role)">{{ props.role }}</span>
+            <span @click="toggleFilter(props.level)">{{ props.level }}</span>
 
-            <span v-for="lang in props.languages">{{ lang }}</span>
-            <span v-for="tool in props.tools">{{ tool }}</span>
+            <span v-for="lang in props.languages"
+             @click="toggleFilter(lang)">{{ lang }}</span>
+            <span v-for="tool in props.tools"
+             @click="toggleFilter(tool)">{{ tool }}</span>
         </div>
     </li>
 </template>
