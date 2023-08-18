@@ -71,6 +71,13 @@ function toggleFilter(filter: string): void {
     color: var(--Very-Dark-Grayish-Cyan);
 
     margin-left: 6px;
+
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+.info p:hover {
+    color: var(--Desaturated-Dark-Cyan);
 }
 
 .info span:nth-last-child(-n + 2)::before {
@@ -105,5 +112,15 @@ function toggleFilter(filter: string): void {
     
     padding: 7px;
     margin: 0 7px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+    transition: color .2s ease, background-color .2s ease;
+}
+
+.filters span:hover {
+    background-color: var(--Desaturated-Dark-Cyan);
+    color: white;
 }
 </style>
