@@ -117,7 +117,7 @@ function applyFilters(filters: string[], listing: ListingInterface): boolean {
     background-color: var(--Light-Grayish-Cyan-Filter-Tablets);
     
     padding: 0;
-    margin: 0 10px;
+    margin: 4px 10px;
     border-radius: 7px;
 
     display: inline-flex;
@@ -145,5 +145,13 @@ function applyFilters(filters: string[], listing: ListingInterface): boolean {
 
 .active-filter .img img {
     width: 12px;
+}
+
+@media (width < 450px) {
+    .filter-display .clear {
+        text-decoration: none !important;
+        color: var(--Dark-Grayish-Cyan);
+        font-weight: 700;
+    }
 }
 </style>
