@@ -10,7 +10,6 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
 
 
 ## Overview
@@ -26,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My Solution]()
+- Solution URL: [My Solution](https://www.frontendmentor.io/solutions/job-listings-with-vue-and-typescript-X9_JTGnFzi)
 - Live Site URL: [My Live Site](https://rodrfct.github.io/static-job-listings/)
 
 ## My process
@@ -34,7 +33,7 @@ Users should be able to:
 ### Built with
 
 - [Vue](https://vuejs.org/) - JS library
-- [TypeScript]
+- [TypeScript]()
 
 
 ### What I learned
