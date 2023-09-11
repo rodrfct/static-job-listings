@@ -8,12 +8,16 @@ const emit = defineEmits(['toggle-filter'])
 function toggleFilter(filter: string): void {
     emit('toggle-filter', filter)
 }
+
+function getImageUrl(name: string): string {
+    return new URL(`../assets/images/${name}`, import.meta.url).href
+}
 </script>
 
 <template>
     <li class="listing"
      :style="{borderLeft: `${props.featured ? '5px solid var(--Desaturated-Dark-Cyan)' : '0px'}`}">
-        <img :src="props.logo" alt="">
+        <img :src="getImageUrl(props.logo)" alt="">
 
         <div class="info">
             <span id="company">{{ props.company }}</span>
